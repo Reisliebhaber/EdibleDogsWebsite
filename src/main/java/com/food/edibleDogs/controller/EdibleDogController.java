@@ -25,7 +25,7 @@ public class EdibleDogController {
 
     @GetMapping("/test")
     public String getTest(Model model) {
-        String dogImageURL = edibleDogService.fetchDogImageURL();
+        String dogImageURL = edibleDogService.fetchDogImageURL().get(3);
         model.addAttribute("dogImage", dogImageURL);
         model.addAttribute("message", "Hello fellow Dogs, I AM THE CONTROLLER!!! :D");
         return "test";
