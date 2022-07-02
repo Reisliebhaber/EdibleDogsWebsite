@@ -27,7 +27,7 @@ public class EdibleDogService {
     public ArrayList<String> fetchDogImageURL() {
         ArrayList<String> dogImagesURL = new ArrayList<>();
         String dogImageURL = "";
-        String requestDogImagePath = "v1/images/search?size=thumb&mime_types=jpg&format=json&order=RANDOM&limit=10";//TODO &has_breeds=false if trying to use mapper class to avoid try catch
+        String requestDogImagePath = "v1/images/search?size=thumb&mime_types=jpg&format=json&order=RANDOM&limit=3";//TODO &has_breeds=false if trying to use mapper class to avoid try catch
         String requestDogImageURL = dogApiURL + requestDogImagePath;
         RestTemplate restTemplate = new RestTemplate();
         ResponseEntity<String> dogImagesResponse = restTemplate.getForEntity(requestDogImageURL, String.class);
