@@ -45,7 +45,7 @@ public class EdibleDogController {
         //String dogImageURL = edibleDogService.fetchDogImageURL().get(3);
         model.addAttribute("dogImages", edibleDogService.fetchDogImageURL());
         model.addAttribute("message", "Hello fellow Dogs, CONTROLLER HERE!!! :D");
-        return "test";
+        return "/pages/test";
     }
 
 }

@@ -8,6 +8,9 @@ import lombok.AllArgsConstructor;
 import lombok.experimental.FieldDefaults;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpEntity;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpMethod;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
@@ -27,10 +30,15 @@ public class EdibleDogService {
     public ArrayList<String> fetchDogImageURL() {
         ArrayList<String> dogImagesURL = new ArrayList<>();
         String dogImageURL = "";
-        String requestDogImagePath = "v1/images/search?size=thumb&mime_types=jpg&format=json&order=RANDOM&limit=3";//TODO &has_breeds=false if trying to use mapper class to avoid try catch
+        String requestDogImagePath = "v1/images/search?size=med&mime_types=jpg&format=json&order=DESC&limit=25";//TODO &has_breeds=false if trying to use mapper class to avoid try catch
         String requestDogImageURL = dogApiURL + requestDogImagePath;
         RestTemplate restTemplate = new RestTemplate();
-        ResponseEntity<String> dogImagesResponse = restTemplate.getForEntity(requestDogImageURL, String.class);
+        HttpHeaders header = new HttpHeaders();
+        header.set("x-api-key", "cbc56a7b-0c7d-44f7-8aa9-37a6791daf31");
+        HttpEntity<Void> requestEntity = new HttpEntity<>(header);
+        ResponseEntity<String> dogImagesResponse = restTemplate.exchange(requestDogImageURL, HttpMethod.GET, requestEntity
+        ,String.class);
+        //restTemplate.getForEntity(requestDogImageURL, String.class);
         ObjectMapper mapper = new ObjectMapper();
         try {
             JsonNode root = mapper.readTree(dogImagesResponse.getBody());
