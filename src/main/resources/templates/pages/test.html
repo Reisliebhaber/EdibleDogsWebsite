@@ -8,6 +8,8 @@
 <body>
 <div class="main-content container-fluid" layout:fragment="content">
     <div class="page-title">
+        <p class="h1">Edible Dogs </p>
+        <h1 > Edible Dogs</h1>
         <h3>Dashboard</h3>
         <p class="text-subtitle text-muted">A good dashboard to display your statistics</p>
     </div>
@@ -24,63 +26,21 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-3">
-                <div class="card card-statistic">
-                    <div class="card-body p-0">
-                        <div class="d-flex flex-column">
-                            <div class='px-3 py-3 d-flex justify-content-between'>
-                                <h3 class='card-title'>Revenue</h3>
-                                <div class="card-right d-flex align-items-center">
-                                    <p>$532,2 </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+        </div>
+        <div class="col-12 col-md-3">
+            <div class="card ">
+                <div class="card-header">
+                    <h4>Your Earnings</h4>
                 </div>
-            </div>
-            <div class="col-12 col-md-3">
-                <div class="card card-statistic">
-                    <div class="card-body p-0">
-                        <div class="d-flex flex-column">
-                            <div class='px-3 py-3 d-flex justify-content-between'>
-                                <h3 class='card-title'>ORDERS</h3>
-                                <div class="card-right d-flex align-items-center">
-                                    <p>1,544 </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--
-            <div class="col-12 col-md-3">
-                <div class="card card-statistic">
-                    <div class="card-body p-0">
-                        <div class="d-flex flex-column">
-                            <div class='px-3 py-3 d-flex justify-content-between'>
-                                <h3 class='card-title'>Sales Today</h3>
-                                <div class="card-right d-flex align-items-center">
-                                    <p>423 </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>-->
-            <div class="col-12 col-md-3">
-                <div class="card ">
-                    <div class="card-header">
-                        <h4>Your Earnings</h4>
-                    </div>
-                    <div class="card-body">
-                        <div class="text-center mb-5">
-                            <h6>From last month</h6>
-                            <h1 class='text-green'>+$2,134</h1>
-                        </div>
+                <div class="card-body">
+                    <div class="text-center mb-5">
+                        <h6>From last month</h6>
+                        <h1 class='text-green'>+$2,134</h1>
                     </div>
                 </div>
             </div>
         </div>
+
         <div id="dogCarousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                     <div th:each="dogImage : ${dogImages}" class="carousel-item" name="dogImg">
@@ -318,5 +278,6 @@
 </div>
 </div>
 </section>
+
 </body>
 </html>
