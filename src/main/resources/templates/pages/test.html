@@ -6,14 +6,13 @@
     <title>Title</title>
 </head>
 <body>
-<div class="main-content container-fluid" layout:fragment="content">
-    <div class="page-title">
-        <p class="h1">Edible Dogs </p>
-        <h1 > Edible Dogs</h1>
-        <h3>Dashboard</h3>
-        <p class="text-subtitle text-muted">A good dashboard to display your statistics</p>
-    </div>
+<section class="main-content container-fluid" layout:fragment="content">
     <section class="section">
+        <div class="container">
+            <div class="page-title">
+                <h1 style="font-size:48px "> Edible Dogs</h1>
+                <p class="text-subtitle text-muted">Our product is <span >cute and tender</span>. You should buy it.   </p>
+            </div><!--
         <div class="row mb-2">
             <div class="col-12 col-md-3">
                 <div class="card card-statistic">
@@ -39,6 +38,74 @@
                     </div>
                 </div>
             </div>
+        </div>
+        </div>-->
+        <div class="container">
+        <div class="container-fluid"><!-- text-center bg-white-info p-2 text-dark-->
+            <div>
+                <h2>Why should I eat dogs?</h2>
+                <p>You see dogs everywhere for example on the streets, on the internet, at your friends home or when you are looking in the mirror.
+                    But don't you ask yourself sometimes, how they
+                    <span style = "font-size: 20px;font-weight:600;"> taste?</span>
+                </p>
+            </div>
+
+            <div>
+                <p>Aren't you bored of just touching their skin?
+                </p>
+                <p>  Don't you like to feel them... in your mouth?
+                </p>
+                <p> Well if so, we are the ones who can help you out!!!
+                </p>
+            </div>
+
+
+            <div>
+                <h3>
+                    Dogs are good for your health
+                </h3>
+
+                <p> Dog meat has a lot of important nutrients. That's why we recommend our meat
+                </p>
+                <p>for babies and vegetarian,especially for vegetarian they need the nutrient.
+                </p>
+            </div>
+            <h4>Dog meat can heal diseases for example:</h4>
+            <div>
+                <ul>
+                    <li>
+                        <span> Celiac disease</span>
+
+                    </li>
+                    <li>
+                        <span> Crohn's  disease</span>
+
+                    </li>
+                    <li>
+                        <span>Alzheimer's disease</span>
+
+                    </li>
+                    <li>
+                        <span>Asthma</span>
+
+                    </li>
+                    <li>
+                        <span>Diabetes mellitus</span>
+
+                    </li>
+                    <li>
+                        <span>all forms of cancer</span>
+
+                    </li>
+
+                </ul>
+            </div>
+
+            <h3>Our dog meat has high quality standards</h3>
+            <p>Our meat is examined every minute and is very fresh. </p>
+            <p> Here you can see a part of our stock:</p>
+
+        </div>
         </div>
 
         <div id="dogCarousel" class="carousel slide" data-bs-ride="carousel">
@@ -66,218 +133,21 @@
             return func;
          })();
         </script>
-        <!--SALES
-        <div class="row mb-4">
+        <!--SALES-->
+            <p> </p>
+        <h3>
+            Animal Cruelty?
+        </h3>
+        <p>You might ask yourself, if putting a dog in these clothes isn't animal cruelty...  </p>
 
-            <div class="col-md-8">
-                <div class="card">
-                    <div class="card-header">
-                        <h3 class='card-heading p-1 pl-3'>Sales</h3>
-                    </div>
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-md-4 col-12">
-                                <div class="pl-3">
-                                    <h1 class='mt-5'>$21,102</h1>
-                                    <p class='text-xs'><span class="text-green"><i data-feather="bar-chart"
-                                                                                   width="15"></i> +19%</span> than last month</p>
-                                    <div class="legends">
-                                        <div class="legend d-flex flex-row align-items-center">
-                                            <div class='w-3 h-3 rounded-full bg-info me-2'></div><span
-                                                class='text-xs'>Last Month</span>
-                                        </div>
-                                        <div class="legend d-flex flex-row align-items-center">
-                                            <div class='w-3 h-3 rounded-full bg-blue me-2'></div><span
-                                                class='text-xs'>Current Month</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-8 col-12">
-                                <canvas id="bar"></canvas>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-header d-flex justify-content-between align-items-center">
-                        <h4 class="card-title">Orders Today</h4>
-                        <div class="d-flex ">
-                            <i data-feather="download"></i>
-                        </div>
-                    </div>
-                    <div class="card-body px-0 pb-0">
-                        <div class="table-responsive">
-                            <table class='table mb-0' id="table1">
-                                <thead>
-                                <tr>
-                                    <th>Name</th>
-                                    <th>Email</th>
-                                    <th>Phone</th>
-                                    <th>City</th>
-                                    <th>Status</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <td>Graiden</td>
-                                    <td>vehicula.aliquet@semconsequat.co.uk</td>
-                                    <td>076 4820 8838</td>
-                                    <td>Offenburg</td>
-                                    <td>
-                                        <span class="badge bg-success">Active</span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Dale</td>
-                                    <td>fringilla.euismod.enim@quam.ca</td>
-                                    <td>0500 527693</td>
-                                    <td>New Quay</td>
-                                    <td>
-                                        <span class="badge bg-success">Active</span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Nathaniel</td>
-                                    <td>mi.Duis@diam.edu</td>
-                                    <td>(012165) 76278</td>
-                                    <td>Grumo Appula</td>
-                                    <td>
-                                        <span class="badge bg-danger">Inactive</span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Darius</td>
-                                    <td>velit@nec.com</td>
-                                    <td>0309 690 7871</td>
-                                    <td>Ways</td>
-                                    <td>
-                                        <span class="badge bg-success">Active</span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Ganteng</td>
-                                    <td>velit@nec.com</td>
-                                    <td>0309 690 7871</td>
-                                    <td>Ways</td>
-                                    <td>
-                                        <span class="badge bg-success">Active</span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Oleg</td>
-                                    <td>rhoncus.id@Aliquamauctorvelit.net</td>
-                                    <td>0500 441046</td>
-                                    <td>Rossignol</td>
-                                    <td>
-                                        <span class="badge bg-success">Active</span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Kermit</td>
-                                    <td>diam.Sed.diam@anteVivamusnon.org</td>
-                                    <td>(01653) 27844</td>
-                                    <td>Patna</td>
-                                    <td>
-                                        <span class="badge bg-success">Active</span>
-                                    </td>
-                                </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card ">
-                    <div class="card-header">
-                        <h4>Your Earnings</h4>
-                    </div>
-                    <div class="card-body">
-                        <div class="text-center mb-5">
-                            <h6>From last month</h6>
-                            <h1 class='text-green'>+$2,134</h1>
-                        </div>
-                    </div>
-                </div>
-                <div class="card widget-todo">
-                    <div
-                            class="card-header border-bottom d-flex justify-content-between align-items-center">
-                        <h4 class="card-title d-flex">
-                            <i class='bx bx-check font-medium-5 pl-25 pr-75'></i>Progress
-                        </h4>
-
-                    </div>
-                    <div class="card-body px-0 py-1">
-                        <table class='table table-borderless'>
-                            <tr>
-                                <td class='col-3'>UI Design</td>
-                                <td class='col-6'>
-                                    <div class="progress progress-info">
-                                        <div class="progress-bar" role="progressbar" style="width: 60%"
-                                             aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </td>
-                                <td class='col-3 text-center'>60%</td>
-                            </tr>
-                            <tr>
-                                <td class='col-3'>VueJS</td>
-                                <td class='col-6'>
-                                    <div class="progress progress-success">
-                                        <div class="progress-bar" role="progressbar" style="width: 35%"
-                                             aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </td>
-                                <td class='col-3 text-center'>30%</td>
-                            </tr>
-                            <tr>
-                                <td class='col-3'>Laravel</td>
-                                <td class='col-6'>
-                                    <div class="progress progress-danger">
-                                        <div class="progress-bar" role="progressbar" style="width: 50%"
-                                             aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </td>
-                                <td class='col-3 text-center'>50%</td>
-                            </tr>
-                            <tr>
-                                <td class='col-3'>ReactJS</td>
-                                <td class='col-6'>
-                                    <div class="progress progress-primary">
-                                        <div class="progress-bar" role="progressbar" style="width: 80%"
-                                             aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </td>
-                                <td class='col-3 text-center'>80%</td>
-                            </tr>
-                            <tr>
-                                <td class='col-3'>Go</td>
-                                <td class='col-6'>
-                                    <div class="progress progress-secondary">
-                                        <div class="progress-bar" role="progressbar" style="width: 65%"
-                                             aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </td>
-                                <td class='col-3 text-center'>65%</td>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
-            </div>
+        <h4 class="fst-italic">Well yes ...but everything else is fine :D
+        </h4>
         </div>
-    </section>
-</div>
-
-<h2 th:text="${message}"> TEST </h2>
-<div th:each="dogImage : ${dogImages}">
-  <img th:src="${dogImage}">
-</div>  -->
     </section>
 </div>
 </div>
 </div>
 </div>
 </section>
-
 </body>
 </html>

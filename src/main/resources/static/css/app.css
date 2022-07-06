@@ -40,6 +40,7 @@
     font-family: Raleway
 }
 
+
 #app {
     position: relative
 }
@@ -52,7 +53,7 @@
 }
 
 #main .main-content {
-    padding: 2rem 1.5rem
+    padding: 2rem 1.5rem/**/
 }
 
 #main .main-content .page-title h3 {
@@ -1609,6 +1610,10 @@ footer {
 
 .bg-info {
     background-color: #41b1f9 !important
+}
+
+.bg-white-info {
+    background-color: #b6e1fc !important
 }
 
 .text-blue {
