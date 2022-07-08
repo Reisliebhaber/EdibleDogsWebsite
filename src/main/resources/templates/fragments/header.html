@@ -5,20 +5,33 @@
     <title>Title</title>
 </head>
 <body>
-    <nav class="navbar navbar-header navbar-expand navbar-light bg-white-info sticky-top" th:fragment="header"><!--header
-    <a class="sidebar-toggler" href="#"><span class="navbar-toggler-icon"></span></a>-->
-        <h1 style="vertical-align: middle;"> Edible Dogs    </h1>
-        <!--
-        <img src="https://cdn.pixabay.com/photo/2016/04/07/18/57/silhouette-1314467_960_720.png"
-             style='height: 100%; width: 100%; object-fit: contain'>-->
-
-        <div class="text-dark text-end float-end" id="navbarSupportedContent"
-             style="margin-left: auto; margin-right: 0;">
-            <div class="d-none d-md-block d-lg-inline-block">Aren't you hungry for Dogs?</div>
-            <div class="avatar me-1">
-                <img src="https://cdn.pixabay.com/photo/2016/04/07/18/57/silhouette-1314467_960_720.png" alt="" srcset="">
+</nav>
+    <nav class="navbar navbar-header navbar-expand navbar-light bg-white-info sticky-top" th:fragment="header">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="test">
+                <h1>Edible Dogs </h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="home">Home</a>
+                    </li><!--
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item d-flex">
+                        <a class="nav-link" href="#">Rechts</a>
+                    </li> -->
+                </ul>
+                <div class="avatar me-1">
+                    <a class="nav-link d-flex" href="#">Aren't you hungry for Dogs?</a>
+                    <img src="https://cdn.pixabay.com/photo/2016/04/07/18/57/silhouette-1314467_960_720.png" alt="" srcset="">
+                </div>
             </div>
         </div>
-</nav>
+    </nav>
 </body>
 </html>
