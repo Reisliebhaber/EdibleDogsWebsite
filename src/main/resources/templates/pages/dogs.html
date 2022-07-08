@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layouts/standardLayout}">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<section class="main-content container-fluid" layout:fragment="content">
+    <div class="container">
+      <div class="page-title">
+        <h1 class="fw-light text-center text-lg-start mt-4 mb-0">Edible Dogs</h1>
+        <p class="text-subtitle text-muted">Here's a better look at our inventory. Press the below button to get more.</p>
+        <hr>
+
+        <div class="d-grid gap-2">
+          <a href="dogs" class="btn btn-outline-primary btn-lg " tabindex="-1" role="button" >get more!</a>
+        </div>
+      </div>
+      <hr class="mt-2 mb-5">
+
+      <div class="container">
+
+        <div class="row text-center text-lg-start">
+
+          <div th:each="dogImage : ${dogImages}" class="col-lg-3 col-md-4 col-6" name="dogImg"> <!-- DIESES DIV Loopen -->
+            <a href="#" class="d-block mb-4 h-100">
+              <img class="img-fluid img-thumbnail" th:src="${dogImage}" alt="">
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  </div>
+  </div>
+  </div>
+  </div>
+
+</body>
+</html>

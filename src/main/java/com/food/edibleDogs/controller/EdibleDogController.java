@@ -41,11 +41,15 @@ public class EdibleDogController {
     }
 
     @GetMapping("/test")
-    public String getTest(Model model) {
+    public String fetchHomePage(Model model) {
         //String dogImageURL = edibleDogService.fetchDogImageURL().get(3);
-        model.addAttribute("dogImages", edibleDogService.fetchDogImageURL());
-        model.addAttribute("message", "Hello fellow Dogs, CONTROLLER HERE!!! :D");
+        model.addAttribute("dogImages", edibleDogService.fetchDogImageUrlDesc());
         return "/pages/test";
+    }
+    @RequestMapping("/dogs")
+    public String fetchDogs(Model model){
+        model.addAttribute("dogImages", edibleDogService.fetchDogImageUrlRandom());
+        return "/pages/dogs";
     }
 
 }
