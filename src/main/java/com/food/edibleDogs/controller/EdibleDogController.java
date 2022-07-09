@@ -35,16 +35,16 @@ public class EdibleDogController {
         return "auth-login";
     }
 
-    @RequestMapping("/home")
+    @RequestMapping("/diagram")
     public String loginSubmit(){
         return "/pages/landing_page";
     }
 
-    @GetMapping("/test")
+    @GetMapping("/home")
     public String fetchHomePage(Model model) {
         //String dogImageURL = edibleDogService.fetchDogImageURL().get(3);
         model.addAttribute("dogImages", edibleDogService.fetchDogImageUrlDesc());
-        return "/pages/test";
+        return "/pages/home";
     }
     @RequestMapping("/dogs")
     public String fetchDogs(Model model){
